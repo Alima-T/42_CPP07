@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 19:08:09 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/11/10 19:23:13 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:30:00 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 #include <iostream>
 
 template <typename T>
-class Array {
+class Array
+{
 private:
     T* _data;
     unsigned int _size;
