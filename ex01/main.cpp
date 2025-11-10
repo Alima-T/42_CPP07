@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:18:19 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/11/10 18:52:44 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:33:44 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include "iter.hpp"
 
 // to test iter
-void printInt(int &n) {
+void printInt(int &n) 
+{
     std::cout << n << " ";
 }
 
@@ -22,11 +23,13 @@ void printConstInt(const int &n) {
     std::cout << n << " ";
 }
 
-void increment(int &n) {
+void increment(int &n) 
+{
     n += 1;
 }
 
-void printString(const std::string &s) {
+void printString(const std::string &s) 
+{
     std::cout << s << " ";
 }   
 

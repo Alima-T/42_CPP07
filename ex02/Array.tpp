@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 19:08:14 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/11/10 19:29:48 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:34:43 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,10 @@ Array<T>::Array(const Array<T>& other) : _size(other._size)
 
 // Destructor
 template <typename T>
-Array<T>::~Array() { delete[] _data;}
+Array<T>::~Array() 
+{ 
+    delete[] _data;
+}
 
 // Assignment operator
 template <typename T>
@@ -69,4 +72,7 @@ const T& Array<T>::operator[](int index) const
 
 // Return size of array
 template <typename T>
-unsigned int Array<T>::size() const { return _size;}
+unsigned int Array<T>::size() const 
+{ 
+    return _size;
+}
