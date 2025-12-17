@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 19:05:34 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/11/10 19:24:25 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/17 01:27:37 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,12 @@ int main(int, char**)
         Array<int> tmp = numbers;
         Array<int> test(tmp);
     }
+
+	Array<int> copy(numbers);
+	copy[0] = 12345;
+	if (numbers[0] == 12345)
+		std::cerr << "NOT a deep copy!\n";
+
 
     for (int i = 0; i < MAX_VAL; i++)
     {
