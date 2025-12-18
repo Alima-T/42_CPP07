@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:28:01 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/18 12:08:27 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/18 12:23:56 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 // function templates => реализация должна быть в header.
 
-template <typename T> void swap(T &a, T &b)
+template <typename T> void swap(T& a, T& b)
 {
 	T	temp;
 	temp = a;
@@ -28,13 +28,13 @@ template <typename T> void swap(T &a, T &b)
 * so I use strict comparisons <, >, and otherwise return b
 */
 template <typename T> 
-T const &min(T const &a, T const &b)
+T const& min(T const& a, T const& b)
 {
 	return ((a < b) ? a : b);
 }
 
 template <typename T> 
-T const &max(T const &a, T const &b)
+T const& max(T const& a, T const& b)
 {
 	return ((a > b) ? a : b);
 }
