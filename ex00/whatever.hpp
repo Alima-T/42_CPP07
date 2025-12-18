@@ -6,33 +6,37 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:28:01 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/11/10 19:35:12 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/18 12:08:27 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WHATEVER_HPP
-#define WHATEVER_HPP
+# define WHATEVER_HPP
 
-#include <iostream>
+// function templates => реализация должна быть в header.
 
-template <typename T>
-void swap(T &a, T &b) 
+template <typename T> void swap(T &a, T &b)
 {
-    T temp = a;
-    a = b;
-    b = temp;
+	T	temp;
+	temp = a;
+	a = b;
+	b = temp;
 }
 
-template <typename T>
-T min(const T &a, const T &b) 
+/*
+* when values are equal, min/max must return the second argument, 
+* so I use strict comparisons <, >, and otherwise return b
+*/
+template <typename T> 
+T const &min(T const &a, T const &b)
 {
-    return (a < b) ? a : b;
+	return ((a < b) ? a : b);
 }
 
-template <typename T>
-T max(const T &a, const T &b) 
+template <typename T> 
+T const &max(T const &a, T const &b)
 {
-    return (a > b) ? a : b;
+	return ((a > b) ? a : b);
 }
 
 #endif
