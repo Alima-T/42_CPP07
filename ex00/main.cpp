@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:18:19 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/18 11:47:02 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/20 11:50:28 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int main()
 	std::cout << "c = " << c << ", d = " << d << '\n';
 	std::cout << "min(c, d) = " << ::min(c, d) << '\n';
 	std::cout << "max(c, d) = " << ::max(c, d) << '\n';
+
+	// *** extra tests ***
 
 	std::cout <<std::endl<< "\033[35m*** equal test: ***\033[0m" << std::endl;
 	int x = 42;
