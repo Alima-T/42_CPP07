@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:28:01 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/20 10:46:39 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/20 11:36:08 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ template <typename T> void swap(T& a, T& b)
 	a = b;
 	b = temp;
 }
-
 
 template <typename T> 
 T const& min(T const& a, T const& b)

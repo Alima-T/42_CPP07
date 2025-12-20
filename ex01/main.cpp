@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:18:19 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/20 11:11:16 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/20 11:37:10 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int main( void )
 	iter(words, wordsLen, printString);
 	std::cout << std::endl;
 	
-	// Тест с const arr - read only autput is ok, we don't change:
+	// Тest const arr - read only output is ok, we don't change:
 	std::string const constWords[] = {"const", "array.", "Lambda in C++ is", "Okay."};
 	std::cout << "Const words: ";
 	iter(constWords, 4, [](std::string const& s) { std::cout << s << ' '; }); //lambda to print
