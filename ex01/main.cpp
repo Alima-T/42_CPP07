@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:18:19 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/18 13:48:17 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/20 11:11:16 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main( void )
 	iter(numbers, len, printInt);        // const& ok
 	std::cout << '\n';
 
-	iter(numbers, len, increment);       // only non-const&
+	iter(numbers, len, increment);       // modify only non-const&
 
 	std::cout << "After increment: ";
 	iter(numbers, len, printInt);
@@ -55,10 +55,10 @@ int main( void )
 	iter(words, wordsLen, printString);
 	std::cout << std::endl;
 	
-	// Тест с const массивом — должно работать, но менять элементы нельзя:
-	std::string const constWords[] = {"const", "array"};
+	// Тест с const arr - read only autput is ok, we don't change:
+	std::string const constWords[] = {"const", "array.", "Lambda in C++ is", "Okay."};
 	std::cout << "Const words: ";
-	iter(constWords, 2, [](std::string const& s) { std::cout << s << ' '; }); // C++17 lambda ok
+	iter(constWords, 4, [](std::string const& s) { std::cout << s << ' '; }); //lambda to print
 	std::cout << '\n';
 	
 	return 0;

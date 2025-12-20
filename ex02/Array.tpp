@@ -6,22 +6,22 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 19:08:14 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/19 14:35:04 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/20 11:13:38 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
 // I set m_data to nullptr so the pointer is never garbage; destructor could call delete[] on a garbage pointer
-// Default constructor
+
 template <typename T>
 Array<T>::Array() : m_data(nullptr), m_size(0) {}
 
 /**
-Here nullptr is not required, we assign m_data immediately.
-new T[n]() value-initializes elements: int -> 0 (or if new int[3] without () = int -> garbage)
-new T - class objects are created using their default constructor.
-n can be 0, it is allowed (delete[] is still safe).
+*Here nullptr is not required, we assign m_data immediately.
+*new T[n]() value-initializes elements: int -> 0 (or if new int[3] without () = int -> garbage)
+*new T - class objects are created using their default constructor.
+*n can be 0, it is allowed (delete[] is still safe).
  */ 
 template <typename T>
 Array<T>::Array(unsigned int n) : m_size(n)

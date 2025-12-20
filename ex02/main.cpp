@@ -6,12 +6,12 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 19:05:34 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/12/19 14:21:15 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/12/20 11:30:50 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>  // std::cout, std::cerr
-#include <cstddef>   // std::size_t
+#include <iostream> 
+#include <cstddef>  // size_t
 #include "Array.hpp"
 
 int main()
@@ -31,7 +31,7 @@ int main()
 		
 		// 3. Cnstr with size: if Array uses new T[n](), ints should be initialized to 0.
 		const Array<int> constArray(intArray); // const object (copy)
-		std::cout << "Read from constArray:\n";
+		std::cout << "Read from constArray element 2:\n";
 		std::cout << constArray[1] << "\n";    // here calls const operator[]
 		// constArray[1] = 5;                  // this must NOT compile (read-only)
 
